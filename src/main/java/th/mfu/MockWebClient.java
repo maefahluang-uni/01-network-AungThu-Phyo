@@ -20,7 +20,7 @@ public class MockWebClient {
         out.flush();
         // Read the response from the web server and print out to console
         String responses;
-        while((responses = in.readLine()) != null && !inputLine.isEmpty()){
+        while((responses = in.readLine()) != null && !responses.isEmpty()){
             System.out.println(responses);
         }
         // Close the socket
